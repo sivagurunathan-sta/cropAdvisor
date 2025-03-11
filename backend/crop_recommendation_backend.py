@@ -10,7 +10,7 @@ CORS(app)  # Enable CORS for all routes
 
 # Load the trained model and scaler
 MODEL_PATH = './data/crop_recommendation_model.pkl'
-SCALER_PATH = '/data/crop_scaler.pkl'
+SCALER_PATH = './data/crop_scaler.pkl'
 
 # Check if model exists, if not, train and save it
 if not os.path.exists(MODEL_PATH) or not os.path.exists(SCALER_PATH):
